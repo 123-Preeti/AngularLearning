@@ -1,7 +1,17 @@
-<<<<<<< HEAD
-<app-test></app-test>
-<app-forget-password></app-forget-password>
-<p>app works!</p>
-=======
-<p>app works!</p>
->>>>>>> e057952ce149e72ed5d3b32bff9ce555699b4b6b
+<div class="container-fluid">
+  <app-header></app-header>
+  <div class="serach">
+    <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)] = "yourname" > <br><br>
+   <p> Hey : {{ yourname }}</p>
+</div>
+
+  </div>
+  <div class="d-flex">
+    <div class="p-2 flex-fill"><app-left></app-left></div>
+    <div class="p-2 flex-fill"><app-center></app-center></div>
+    <div class="p-2 flex-fill"><app-right></app-right></div>
+    <app-product-list></app-product-list>
+  </div>
+  <app-footer></app-footer>
+</div>

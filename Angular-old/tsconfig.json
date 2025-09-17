@@ -13,12 +13,9 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "ES2022",
-<<<<<<< HEAD
     "module": "es2020",
     "moduleResolution": "node"
-=======
-    "module": "preserve"
->>>>>>> e057952ce149e72ed5d3b32bff9ce555699b4b6b
+
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

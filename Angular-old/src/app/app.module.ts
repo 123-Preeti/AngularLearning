@@ -1,35 +1,42 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app/app.component';
-<<<<<<< HEAD
 import { ForgetPasswordComponent } from './app/forget-password/forget-password.component';
 import { TestComponent } from './test/test.component';
+import { LeftComponent } from './left/left.component';
+import { RightComponent } from './right/right.component';
+import { CenterComponent } from './center/center.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { SearchComponent } from './search/search.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
-=======
->>>>>>> e057952ce149e72ed5d3b32bff9ce555699b4b6b
 
 
 @NgModule({
   declarations: [
-<<<<<<< HEAD
     ForgetPasswordComponent,
     AppComponent,
-    TestComponent
-=======
-    AppComponent
+    TestComponent,
+    LeftComponent,
+    RightComponent,
+    CenterComponent,
+    HeaderComponent,
+    FooterComponent,
+    SearchComponent,
+  ProductListComponent,
+    
   
->>>>>>> e057952ce149e72ed5d3b32bff9ce555699b4b6b
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
+
   ],
   providers: [],
-<<<<<<< HEAD
   bootstrap: [
  AppComponent
   ]
-=======
-  bootstrap: [AppComponent]   // bootstrap with AppComponent
->>>>>>> e057952ce149e72ed5d3b32bff9ce555699b4b6b
 })
 export class AppModule {}
