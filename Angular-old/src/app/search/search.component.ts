@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './search.component.css'
 })
 export class SearchComponent {
-  yourname: string = 'preeti'; 
+  // yourname: string = 'preeti'; 
+  // myname: string = 'Avinash';
+
+  // onNameChange() {
+  //   this.myname = ' avi ';
+  // }
+// searchText: string = '';
+
 }

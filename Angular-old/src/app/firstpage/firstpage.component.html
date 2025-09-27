@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div class="firstpage-container">
+  <h1 class="project-title">PeopleHub</h1>
+  <p class="project-tagline">Find everyone’s information in one place</p>
+  <div class="button-group">
+    <ng-container *ngIf="toggle; else toggleOff">
+      <p>U are on Firstpage</p>
+    </ng-container>
+    <ng-template #toggleOff>
+      <p>U are on Firstpage</p>
+    </ng-template>
+
+    <button class="btn btn-primary btn-lg" routerLink="/home" (click)="onToggle">Go to Home</button>
+    <button class="btn btn-outline-secondary btn-lg" >
+      <a href="/login">
+      Login</a></button>
+    <button class="btn btn-outline-danger btn-lg">
+      <a href="/logout" Logout></a></button>
+  </div>
+</div>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

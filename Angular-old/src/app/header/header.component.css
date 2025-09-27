@@ -1,5 +1,21 @@
-.container-fluid{
-    background-color: black;
-    color: white;
-    
+   :host {
+  display: block;
+  width: 100%;
 }
+   
+   .navbar {
+      background-color: #212529; /* Dark gray/black navbar */
+    }
+    .form-control {
+      background-color: #000 !important; /* Black background */
+      color: #fff !important;            /* White text */
+      border: 1px solid #444;
+    }
+    .form-control::placeholder {
+      color: #aaa; /* Lighter placeholder text */
+    }
+    .form-control:focus {
+      background-color: #111 !important;
+      color: #fff;
+      border-color: #666;
+    }

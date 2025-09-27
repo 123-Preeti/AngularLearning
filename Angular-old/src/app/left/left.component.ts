@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrl: './left.component.css'
 })
 export class LeftComponent {
+// infoa = {
+//   name : "Avinash",
+//   age: 28
+// }
+  // name: string = "Preeti";
+  // age: number = 23;
 
+  //property binding
+
+  // yourname :string = '';
+  // imgUrl : string = '';
+// name = "avi";
+
+//   pimage = '/assets/img/diary.png';
+
+
+  
 }

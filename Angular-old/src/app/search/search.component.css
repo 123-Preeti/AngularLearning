@@ -1,3 +1,41 @@
 body {
     background-color: blue;
 }
+.search-bar {
+  max-width: 400px;     /* Limit max width */
+  width: 100%;          /* Take full width on small screens */
+  margin: 20px auto;    /* Center horizontally with spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px;   /* Rounded corners */
+  overflow: hidden;     /* Prevent children from overflowing */
+  transition: all 0.3s ease-in-out;
+}
+
+.search-bar:focus-within {
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3); /* Glow on focus */
+  transform: scale(1.02);
+}
+
+.search-bar .form-control {
+  border: none;              /* Remove default border */
+  padding: 10px 15px;        /* Better spacing */
+  font-size: 16px;
+}
+
+.search-bar .form-control:focus {
+  outline: none;             /* Remove outline */
+  box-shadow: none;          /* Remove Bootstrap’s blue shadow */
+}
+
+.search-bar .btn {
+  border: none;              /* Remove default border */
+  background: #007bff;       /* Primary blue */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.search-bar .btn:hover {
+  background: #0056b3;       /* Darker blue on hover */
+}

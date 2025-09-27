@@ -1,0 +1,55 @@
+/* ===== About Section Styles ===== */
+section {
+  background: #f9f9f9; /* Light background */
+  padding: 60px 0;
+}
+
+section h2 {
+  font-weight: 700;
+  color: #222;
+}
+
+section p.lead {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+section p {
+  color: #666;
+  line-height: 1.7;
+}
+
+section img {
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+section .d-flex {
+  align-items: flex-start;
+  transition: transform 0.3s ease-in-out;
+}
+
+section .d-flex:hover {
+  transform: translateY(-5px);
+}
+
+section .d-flex svg {
+  color: #0d6efd; /* Bootstrap Primary Blue */
+  flex-shrink: 0;
+  transition: color 0.3s;
+}
+
+section .d-flex:hover svg {
+  color: #6610f2; /* Purple hover */
+}
+
+section h4, 
+section .h4 {
+  font-weight: 600;
+  color: #333;
+}
+
+section .text-secondary {
+  font-size: 0.95rem;
+}

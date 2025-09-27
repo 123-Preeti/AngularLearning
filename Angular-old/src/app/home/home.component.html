@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <div>
+    <app-header></app-header>
+
+<div class="container mt-5">
+  <h2 class="text-center text-success mb-4">Person Details</h2>
+
+  <table class="table table-bordered table-striped" *ngIf="person">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Contact</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ person.id }}</td>
+        <td>{{ person.name }}</td>
+        <td>{{ person.age }}</td>
+        <td>{{ person.contact }}</td>
+        <td>
+          <img [src]="person.imgUrl" alt="Person Image" width="80" height="80">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+  </div>
+
+  <div class="d-flex">
+    <div class="p-2 flex-fill"><app-left></app-left></div>
+    <!-- <div class="p-2 flex-fill"><img [src]="imageUrl" height="450px" width="450px" /></div> -->
+    <div class="p-2 flex-fill"><app-right></app-right></div>
+  </div>
+  <app-footer></app-footer>
+</div>

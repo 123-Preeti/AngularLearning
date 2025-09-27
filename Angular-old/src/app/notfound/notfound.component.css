@@ -1,0 +1,51 @@
+/* ===== 404 Error Page Styles ===== */
+section {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Soft gradient */
+  padding: 60px 0;
+}
+
+section h2 {
+  font-size: 6rem;
+  color: #212529;
+}
+
+section h2 .display-1 {
+  font-size: 7rem;
+  color: #000;
+  line-height: 1;
+}
+
+section h2 i {
+  font-size: 3.5rem;
+  color: #dc3545; /* Bootstrap danger red */
+}
+
+section h3 {
+  font-weight: 600;
+  color: #343a40;
+}
+
+section p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+section .btn {
+  padding: 12px 32px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+section .btn:hover {
+  background: #0d6efd;   /* Bootstrap Primary */
+  border-color: #0d6efd;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+}
+
+/* Flip animation for the last '4' */
+.bsb-flip-h {
+  display: inline-block;
+  transform: scaleX(-1);
+}

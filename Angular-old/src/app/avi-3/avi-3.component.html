@@ -1,0 +1,137 @@
+<div class="container-fluid bg-primary">
+  <div class="main-center">
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="form-container">
+      <img
+        src="https://ucarecdn.com/412d5bde-bec7-49c8-94c9-f6df6434ed12/address.png"
+        alt="Address Form Image"
+        class="form-img"
+      />
+      <form action="https://formbold.com/s/FORM_ID" method="POST" enctype="multipart/form-data">
+        <div style="margin-bottom: 2rem">
+          <h2 class="form-title">Address Form</h2>
+          <p class="form-desc">
+            Please provide your address details below. Fields marked with * are required.
+          </p>
+        </div>
+
+        <label for="fullname" class="form-label">Full Name*</label>
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          class="form-input"
+          placeholder="Enter your full name"
+          required
+        />
+
+        <label for="email" class="form-label">Email Address*</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-input"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="phone" class="form-label">Phone Number (Optional)</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          class="form-input"
+          placeholder="Enter your phone number"
+        />
+
+        <label for="address-line-1" class="form-label">Street Address (Line 1)*</label>
+        <input
+          type="text"
+          name="address-line-1"
+          id="address-line-1"
+          class="form-input"
+          placeholder="House No., Road Name, etc."
+          required
+        />
+
+        <label for="address-line-2" class="form-label">Street Address (Line 2) (Optional)</label>
+        <input
+          type="text"
+          name="address-line-2"
+          id="address-line-2"
+          class="form-input"
+          placeholder="Apartment, Suite, Floor, etc."
+        />
+
+        <label for="city" class="form-label">City / Town*</label>
+        <input
+          type="text"
+          name="city"
+          id="city"
+          class="form-input"
+          placeholder="City or Town"
+          required
+        />
+
+        <label for="state" class="form-label">State / Province / Region*</label>
+        <input
+          type="text"
+          name="state"
+          id="state"
+          class="form-input"
+          placeholder="State, Province, or Region"
+          required
+        />
+
+        <label for="postal-code" class="form-label">Postal / ZIP Code*</label>
+        <input
+          type="text"
+          name="postal-code"
+          id="postal-code"
+          class="form-input"
+          placeholder="Postal or ZIP Code"
+          required
+        />
+
+        <label for="country" class="form-label">Country*</label>
+        <select name="country" id="country" class="form-select" required>
+          <option value="India">India</option>
+          <option value="USA">United States</option>
+          <option value="UK">United Kingdom</option>
+          <option value="Canada">Canada</option>
+          <option value="Australia">Australia</option>
+        </select>
+
+        <label for="purpose" class="form-label">Purpose of Form (Optional)</label>
+        <select name="purpose" id="purpose" class="form-select">
+          <option value="new-address">New Address</option>
+          <option value="address-update">Address Update</option>
+          <option value="delivery-address">Delivery Address</option>
+          <option value="billing-address">Billing Address</option>
+          <option value="permanent-address">Permanent Address</option>
+        </select>
+
+        <label for="proof-of-address" class="form-label">Proof of Address (Optional)</label>
+        <input
+          type="file"
+          name="proof-of-address"
+          id="proof-of-address"
+          accept=".pdf,.jpg,.jpeg,.png"
+          class="form-file"
+        />
+
+        <div class="form-checkbox-row">
+          <input type="checkbox" id="declaration" class="form-checkbox" required />
+          <label for="declaration" style="margin: 0; font-weight: 500" class="form-label">
+            I confirm this address is accurate and updated to the best of my knowledge.
+          </label>
+        </div>
+        <a class="btn btn-outline-secondary" routerLink="/secondpage"> Page 2 </a>
+
+        <a class="btn btn-outline-secondary" routerLink="/firstpage"> Page 1 </a>
+        <a class="btn btn-outline-secondary" routerLink="/"> Home</a>
+      </form>
+    </div>
+  </div>
+</div>

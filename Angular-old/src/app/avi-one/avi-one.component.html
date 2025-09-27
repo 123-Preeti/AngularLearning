@@ -1,0 +1,144 @@
+<div class="main-container">
+  <!-- Author: FormBold Team -->
+  <!-- Learn More: https://formbold.com -->
+  <div class="form-wrapper">
+    <img
+      src="https://ucarecdn.com/7b4ee20c-0d4c-4a5b-99ef-9d9ca8564b53/eventregristration.png"
+      alt="Event Registration Form Illustration"
+      class="form-image"
+    />
+
+    <form action="https://formbold.com/s/FORM_ID" method="POST">
+      <!-- Title and Description -->
+      <div class="form-header">
+        <h2 class="form-title">Event Registration</h2>
+        <p class="form-description">
+          Fill in the form below to register for the event. All required fields are marked with *.
+        </p>
+      </div>
+
+      <!-- Basic Attendee Information -->
+      <div class="form-group">
+        <label for="fullname" class="form-label">Full Name*</label>
+        <input type="text" name="fullname" id="fullname" class="form-input" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="form-label">Email Address*</label>
+        <input type="email" name="email" id="email" class="form-input" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone" class="form-label">Phone Number (Optional)</label>
+        <input type="text" name="phone" id="phone" class="form-input" />
+      </div>
+
+      <div class="form-group">
+        <label for="organization" class="form-label">Organization / Company Name (Optional)</label>
+        <input type="text" name="organization" id="organization" class="form-input" />
+      </div>
+
+      <!-- Ticket Type / Registration Category -->
+      <div class="form-group">
+        <label for="ticket-type" class="form-label">Ticket Type / Registration Category*</label>
+        <select name="ticket-type" id="ticket-type" class="form-select" required>
+          <option value="general">General</option>
+          <option value="vip">VIP</option>
+          <option value="student">Student</option>
+          <option value="speaker">Speaker</option>
+          <option value="press">Press</option>
+        </select>
+      </div>
+
+      <!-- Number of Attendees -->
+      <div class="form-group">
+        <label for="num-attendees" class="form-label">Number of Attendees (Optional)</label>
+        <input type="number" name="num-attendees" id="num-attendees" class="form-input" />
+      </div>
+
+      <!-- Location Preferences -->
+      <div class="form-group">
+        <label class="form-label">Location Preferences (Optional)</label>
+        <div class="radio-group">
+          <label class="option-item">
+            <input
+              type="radio"
+              name="location-preference"
+              id="physical-location"
+              value="physical"
+              class="form-radio"
+            />
+            Physical
+          </label>
+          <label class="option-item">
+            <input
+              type="radio"
+              name="location-preference"
+              id="virtual-location"
+              value="virtual"
+              class="form-radio"
+            />
+            Virtual
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="preferred-session" class="form-label">Select Preferred Session/City</label>
+        <select name="preferred-session" id="preferred-session" class="form-select">
+          <option value="session-1">Session 1 - New York</option>
+          <option value="session-2">Session 2 - Los Angeles</option>
+          <option value="session-3">Session 3 - Virtual</option>
+        </select>
+      </div>
+
+      <!-- Optional Extras -->
+      <div class="form-group">
+        <label for="dietary-preferences" class="form-label">Dietary Preferences</label>
+        <select name="dietary-preferences" id="dietary-preferences" class="form-select">
+          <option value="none">None</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="vegan">Vegan</option>
+          <option value="gluten-free">Gluten-Free</option>
+          <option value="halal">Halal</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="accessibility-needs" class="form-label">Accessibility Needs</label>
+        <textarea
+          name="accessibility-needs"
+          id="accessibility-needs"
+          rows="3"
+          class="form-textarea"
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="promo-code" class="form-label">Referral Code / Promo Code</label>
+        <input type="text" name="promo-code" id="promo-code" class="form-input" />
+      </div>
+
+      <!-- Comments or Questions -->
+      <div class="form-group">
+        <label for="comments" class="form-label">Comments or Questions</label>
+        <textarea name="comments" id="comments" rows="5" class="form-textarea"></textarea>
+      </div>
+
+      <!-- Consent -->
+      <div class="consent-group">
+        <input type="checkbox" id="consent-checkbox" class="form-checkbox" required />
+        <label for="consent-checkbox" class="consent-label">
+          I agree to the
+          <a href="#">terms and conditions of registration</a>.
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+        <a class="btn btn-outline-secondary" routerLink="/secondpage"> Page 2</a>
+        <a class="btn btn-outline-secondary" routerLink="/thirdpage"> Page 3</a>
+        <a class="btn btn-outline-secondary" routerLink="/"> Home</a>
+    </form>
+  </div>
+</div>
+<style></style>
