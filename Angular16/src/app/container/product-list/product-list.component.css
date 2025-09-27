@@ -1,0 +1,101 @@
+.ekart--product--container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9; /* light background */
+}
+.ekart-on-sale-tag {
+  position: absolute;           /* put this inside a relatively positioned product card */
+  top: 10px;                    /* adjust to place where you want */
+  right: 10px;
+  display: inline-block;
+  min-width: 40px;
+  padding: 6px 8px;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(180deg,#ff4d4f,#d9363e); /* subtle gradient red */
+  border-radius: 12px;          /* pill shape */
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+  transform: rotate(-6deg);     /* visual flair; remove if you want straight */
+  z-index: 10;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+  -webkit-user-select: none;    /* prevent accidental selection */
+  user-select: none;
+}
+
+/* smaller screens: reduce size */
+@media (max-width: 480px) {
+  .ekart-on-sale-tag {
+    top: 8px;
+    right: 8px;
+    padding: 4px 6px;
+    font-size: 11px;
+    border-radius: 10px;
+    min-width: 36px;
+  }
+}
+
+/* optional: alternative style for round badge in corner */
+.ekart-on-sale-tag.circle {
+  border-radius: 50%;
+  padding: 8px;
+  min-width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: none;
+}
+.ekart--product--available-colors,.ekart--product--category,
+.ekart--product--in--stock {
+  font-size: 12px;
+  color: #999;
+  margin-top: 7px;
+}
+
+
+/* Optional: product card styling if you wrap each product in a div */
+.ekart--product--card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ekart--product--card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.ekart--product--card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.ekart--product--card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.ekart--product--card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.ekart--product--card .price {
+  font-weight: bold;
+  color: #e63946; /* red for price */
+  font-size: 1rem;
+}

@@ -1,0 +1,108 @@
+
+/* Search container */
+.ekart--search--product {
+    display: flex;
+    gap: 12px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.btn-search-disabled {
+  background-color: #dcdcdc;   /* light grey */
+  color: #888;                 /* muted text */
+  border: 1px solid #ccc;      /* subtle border */
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: not-allowed;         /* "disabled" cursor */
+  opacity: 0.7;                /* slightly faded */
+  box-shadow: none;            /* remove shadows */
+  transition: none;            /* no hover effect */
+}
+
+.btn-search-disabled:hover {
+  background-color: #dcdcdc;   /* same as normal */
+  color: #888;                 /* prevent hover highlight */
+}
+
+/* Search input */
+.ekart-search-product-input {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.ekart-search-product-input:focus {
+    border-color: #4a90e2;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.1);
+}
+
+/* Search button */
+.btn-search {
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-search:hover {
+    background-color: #357abd;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.btn-search:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(74, 144, 226, 0.3);
+}
+
+/* Search results heading */
+.ekart-search-result-for {
+    max-width: 600px;
+    margin: 30px auto 20px;
+    padding: 0 20px;
+}
+
+.ekart-search-result-for p {
+    color: #333;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.ekart-search-result-for strong {
+    color: #666;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .ekart--search--product {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn-search {
+        width: 100%;
+    }
+    
+    .ekart-search-product-input,
+    .btn-search {
+        font-size: 14px;
+    }
+}
