@@ -23,17 +23,21 @@
                             "src/favicon.ico",
                             "src/assets"
                         ],
-                        "styles": [
+                       "styles": [
+ "src/styles.css",
+  "src/assets/plugins/fontawesome-free/css/all.min.css",
+  "src/assets/dist/css/adminlte.min.css",
+  "src/styles/bootstrap-4.scss",
+  "node_modules/sweetalert2-theme-bootstrap-4/sweetalert2-bootstrap-4.min.css"
+],
 
-                            "src/styles.css",
-                            "src/assets/plugins/fontawesome-free/css/all.min.css",
-                            "src/assets/dist/css/adminlte.min.css"
-                        ],
                         "scripts": [
-                            "src/assets/plugins/jquery/jquery.min.js",
-                            "src/assets/plugins/bootstrap/js/bootstrap.bundle.min.js",
-                            "src/assets/dist/js/adminlte.min.js",
-                            "src/assets/dist/js/demo.js"
+                 "src/assets/plugins/jquery/jquery.min.js",
+  "src/assets/plugins/bootstrap/js/bootstrap.bundle.min.js",
+  "src/assets/dist/js/adminlte.min.js",
+  "src/assets/dist/js/demo.js",
+  "node_modules/sweetalert2/dist/sweetalert2.min.js"
+
                         ]
                     },
                     "configurations": {
@@ -94,7 +98,8 @@
                         ],
                         "styles": [
                             "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-                            "src/styles.css"
+                            "src/styles.css",
+                             "src/styles/bootstrap-4.scss"
                         ],
                         "scripts": []
                     }
